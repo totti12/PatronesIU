@@ -1,20 +1,15 @@
-Patrones de Contenido
-=====================
+Organización de Contenido
+=========================
 
-**Recopilación por:** Eli Moreno Calderón, Sofía Barrantes Zúñiga y
+**Recopilado por:** Eli Moreno Calderón, Sofía Barrantes Zúñiga y
 Geovanny Quirós Perez
 
 La arquitectura de información es el arte de organizar un espacio de
 información. Esto incluye muchas cosas: presentación, búsqueda,
 exploración, etiquetado, categorización, ordenación, manipulación, y
-ocultación estratégica de la información.
-
-Dicha disciplina trata con la estructura u organización del contenido,
-especialmente en cómo diferentes páginas o ventanas están relacionadas
-entre ellas. Se consideran aspectos tales como análisis de contenido y
-planificación, organización de páginas, proveer pistas para ayudar a los
-usuarios a orientarse ellos mismos, etiquetado, técnicas de búsqueda, y
-diseño de la navegación.
+ocultación estratégica de la información. Dicha disciplina trata con la
+estructura u organización del contenido, especialmente en cómo
+diferentes páginas o ventanas están relacionadas entre ellas.
 
 Producto, Búsqueda y Navegación
 -------------------------------
@@ -314,12 +309,13 @@ presenta diferentes listas de información como lo son contactos, flujos
 de noticias, videos y diferentes opciones de entretenimiento, la figura
 6 presenta un bosquejo de este sitio.
 
-Canvas Plus Palette (Lienzo más Paleta)
----------------------------------------
+Lienzo más Paleta
+-----------------
 
-Este diseño se concentra en presentar un panel en blanco y al lado
-botones (Paleta) mediante los cuales el usuario al dar clic crea objetos
-en el panel (Lienzo) en blanco.
+Este diseño (conocido como "canvas plus palette" en inglés) se concentra
+en presentar un panel en blanco y al lado botones (Paleta) mediante los
+cuales el usuario al dar clic crea objetos en el panel (Lienzo) en
+blanco.
 
 Características
 ~~~~~~~~~~~~~~~
@@ -381,13 +377,13 @@ centro el lienzo, todo colocado en la misma ventana.
 .. figure:: _figures/Photoshop.png
    :alt: 
 
-Wizard (Asistente)
-------------------
+Asistente
+---------
 
-Este patrón lo que pretende es conducir al usuario a través de la
-interfaz, mostrando paso a paso cada una de las tareas, donde en cada
-una se puede escoger o cambiar valores preestablecidos, en un orden
-prescrito.
+Este patrón (llamado "wizard" en inglés) lo que pretende es conducir al
+usuario a través de la interfaz, mostrando paso a paso cada una de las
+tareas, donde en cada una se puede escoger o cambiar valores
+preestablecidos, en un orden prescrito.
 
 Características
 ~~~~~~~~~~~~~~~
@@ -470,13 +466,13 @@ junto con un título que resume correctamente la tarea de la ventana.
 .. figure:: _figures/WizardUPS.png
    :alt: 
 
-Settings Editor (Editor de Configuración)
------------------------------------------
+Editor de Configuración
+-----------------------
 
-Este patrón se encarga de proporcionar al usuario una página o ventana
-fácil de usar, para que los usuarios puedan cambiar configuraciones,
-propiedades o preferencias. Además, divide el contenido en pestañas o en
-páginas por separado.
+Este patrón ("setting editor" en inglés) se encarga de proporcionar al
+usuario una página o ventana fácil de usar, para que los usuarios puedan
+cambiar configuraciones, propiedades o preferencias. Además, divide el
+contenido en pestañas o en páginas por separado.
 
 Características
 ~~~~~~~~~~~~~~~
@@ -493,8 +489,8 @@ opciones debe ser fácil, y la configuración existente debe mostrarse al
 usuario para que él pueda encontrar lo que quiere de una manera fácil y
 rápida y a la vez modificar a su antojo la información.
 
-Ventajas:
-~~~~~~~~~
+Ventajas
+~~~~~~~~
 
 Por lo general, las ventanas de configuraciones tienen a ser fáciles de
 encontrar, por lo que los nombres de las propiedades que las integran se
@@ -502,8 +498,8 @@ ubican rápidamente en una adecuada categorización, haciendo sentirse al
 usuario familiarizado con la aplicación, además de que puede editar
 solamente lo que el desee.
 
-Desventajas:
-~~~~~~~~~~~~
+Desventajas
+~~~~~~~~~~~
 
 En algunas aplicaciones, cuando un usuario edita una propiedad, estas lo
 guardan de forma automática, lo que hace que el usuario no pueda decidir
@@ -515,8 +511,8 @@ pestañas, paneles, menús, pero no sobrecargando la forma que escoge,
 porque para los usuarios resulta tedioso tener que trabajar sobre
 jerarquías múltiples.
 
-Ejemplos:
-~~~~~~~~~
+Ejemplos
+~~~~~~~~
 
 Panel de Control de Windows 8: Windows nos presenta en su ventana de
 configuración la forma en que queremos presentar la información, en este
@@ -533,6 +529,270 @@ correspondientes en el panel de la derecha, con botones para poder
 editar esa información sin que se guarde automáticamente.
 
 .. figure:: _figures/SettingFace.png
+   :alt: 
+
+Patrón Vistas Alternativas
+--------------------------
+
+Las aplicaciones más avanzadas de este patrón se orientarían hacia
+diferentes puntos de vista sobre los mismos datos, tales como diferentes
+visualizaciones y / o mecanismos de navegación para ayudar a los
+usuarios a analizar y descubrir lo que necesitan. Por lo que la
+funcionalidad principal de dicho patrón en este apartado como se verá va
+enfocado hacia la creación de vistas alternativas con su respectiva
+funcionalidad distribuida en las mismas y no en la interfaz que se
+muestra por defecto (principal).
+
+Características
+~~~~~~~~~~~~~~~
+
+1. Permite trabajar con varios conjuntos de información con
+   características distintas:
+
+A travez del modelo del diseño, se puede incorporar dichas
+características en distintas vistas y permitir al usuario elegir una
+entre tantas de esas vistas, con eso se logra obtener y trabajar sobre
+los conjuntos de características de manera separada, pero la elección de
+las mismas es libre para el usuario, dando mayor fluides y libertad en
+el espacio de trabajo para el usuario y comodidad en la escogencia entre
+las múltiples vistas y acciones a ejecutar en las mismas. Con dichos
+ajustes se abordan las necesidades de cada quien. Importante saber que
+cuando una interfaz contendrá múltiples funciones y dichas funciones
+sobrecargarán a la interfaz principal lo mejor será crear varios
+conjuntos de características distintas mediante múltiples vistas.
+
+2. Permite la distribución de funcionalidades:
+
+Las cargas de trabajo que se podrían dar en una interfaz mal diseñada
+que no aplica este patrón, podrán ser muchas, y por lo tanto la
+usabilidad y manejo de esta interfaz sería muy poco eficiente, lo ideal
+es liberar la carga, separando necesidades en distintas vistas, con ello
+se evitaría la sobrecarga de datos y funcionalidades de la interfaz
+principal.
+
+Ventajas
+~~~~~~~~
+
+1. Mayor usabilidad: Los sistemas que incluyan este patrón como se
+   mencionó anteriormente darán mayor usabilidad al sistema, evitando
+   sobrecarga de datos en sólo una interfaz, además brindar por medio de
+   distintas vistas las mismas funcionalidades pero de manera más
+   organizada y bien distribuidas.
+2. Mayor eficiencia del sistema: Se obtiene mayor velocidad, agilidad,
+   estilos visuales que gustarán al usuario.
+3. Ayudan al manteniendo de sistemas: Al dividirse las cargas y
+   funciones a desarrollar en dado sistema, será de mayor facilidad al
+   mantenimiento del mismo, ya que la información se encuentra bien
+   distribuida y separada por distintas vistas.
+4. Permite trabajar con grupos de información a elección del usuario: El
+   usuario tendrán la posibilidad a travez de las múltiples vistas, la
+   elección del grupo de información con el cual trabajar, de modo que
+   si elige uno que en realidad no iba a ser de su agrado fácilmente
+   puede navegar por medio de las vistas alternativas y elegir el que
+   crea necesario y trabajar en el mismo en un módulo o interfaz
+   distinta(alternativa).
+
+Desventajas
+~~~~~~~~~~~
+
+1. No detectar las funcionalidades correctamente: No saber detectar
+   cuales son realmente las funcionalidades que necesitan separación
+   respecto a la interfaz principal, puede generar un gran gasto de
+   tiempo en la misma, y sería inútil ya que el usuario no dará uso de
+   dichas vistas.
+
+Ejemplos
+~~~~~~~~
+
+.. figure:: _figures/dropbox.png
+   :alt: 
+
+.. figure:: _figures/maps.png
+   :alt: 
+
+Múltiples áreas de trabajo
+--------------------------
+
+Permite y da la comodidad al usuario de crear su propio ambiente de
+trabajo, dando la opción de colocar sus espacios de trabajo uno al lado
+del otro simultáneamente. Pensado y creado para personas que trabajan o
+realizan múltiples tareas al mismo tiempo(a estas personas se les conoce
+como “multitask”) un ejemplo de este tipo de usuario, es el que está
+realizando una tarea A de repente se da cuenta que necesita hacer una
+tarea B, y así sucesivamente, por lo que este patrón le permite ejecutar
+estas acciones mediante las múltiples áreas de trabajo; entonces una
+buena interfaz que permita la ejecución de tareas múltiples es realmente
+últil para este tipo de personas.
+
+Características
+~~~~~~~~~~~~~~~
+
+Este tipo de patrón permite agrupar de mejor manera la información. Su
+uso por lo general es cuando hay más de 2 secciones que mostrar o
+trabajar, también cuando los nombres de sección son realmente cortos,
+cuando se necesita abordar toda una ventana para trabajar. Se evita
+usarlo por ejemplo cuando hay enlaces a otros sitios del sistema o
+exteriores para ello se necesitará otro patrón.
+
+Algunas de las recomendaciones para elaborar una correcta interfaz con
+múltiples áreas de trabajo como por ejemplo: usar animaciones entre el
+cambio de paneles o “pestañas”, usar iconos que representen el contenido
+a mostrar, permitir el uso del teclado como la opción tab para navegar
+entre pestañas, etc.
+
+Existen muchas maneras de implementar esto en una interfaz entre ellas:
+
+1. Tabuladores: Funcionan como pestañas una al lado de otra, cada
+   “pestaña” contiene una tarea específica por lo que la navegación
+   entre ellas es realmente fluida.
+2. Columnas o paneles dentro de una misma ventana.
+3. Ventanas divididas con divisores interactivos.
+
+Ventajas
+~~~~~~~~
+
+-  Facilidad para cambios o pasos entre distintas tareas: Al tener las
+   áreas de trabajo una seguida de la otra, el usuario podrá elegir
+   entre las tareas que se muestran en las “pestañas”, por lo que el
+   cambio entre las áreas es realmente rápido.
+-  Obtiene toda la ventana para trabajo: Esta parte es una de las
+   principales del porque la importancia de este patrón, el usuario
+   podrá tener la libertad de usar todo el espacio que le provee cada
+   “pestaña” por lo que se obtiene mayor provecho para el manejo y
+   manipulación de mayor información.
+-  Vista de la información de manera más clara y rápida: Cada pestaña
+   tiene su título (el mismo tiene que ser claro), con ello el usuario
+   podrá acceder de manera rápida a la información de tal manera que si
+   trabaja en esa “pestaña” fácilmente puede navegar hacia otra u otras.
+-  Fácil ubicación: Cuando un usuario trabaja en una “pestaña”, como
+   tiene visible las demás dará una mejor ubicación en donde se
+   encuentra trabajando y hacia donde puede ir, según lo desee.
+-  Navegación: Permitir al usuario navegar por las “pestañas” en un
+   orden lógico con la tecla Tab. Una pestaña centrada se podrá
+   seleccionar con la tecla Enter.
+
+Desventajas:
+~~~~~~~~~~~~
+
+-  Al permitir crear múltiples áreas, si el usuario no mantiene orden en
+   las mismas puede generar confusión y/o fácilmente se puede perder la
+   línea de trabajo.
+
+Ejemplos
+~~~~~~~~
+
+.. figure:: _figures/inicio.png
+   :alt: 
+
+.. figure:: _figures/compannia.png
+   :alt: 
+
+Múltiples niveles de ayuda
+--------------------------
+
+Patrón que brinda soporte o ayuda a travez de técnicas implementadas en
+la interfaz, con el fin de brindar orientación en los distintos procesos
+que ejecuta el usuario en el sistema. Básicamente se puede usar cuando
+el sistema en sí es muy complejo y el usuario necesita una ayuda extra
+para desarrollar sus funciones, para ello se contará con el nivel de
+ayuda múltiple. Se utiliza cuando se ha diseñado una interfaz de usuario
+muy interactiva, con información y funciones muy complejas, por ejemplo
+los lectores de correo, software de base de datos, herramientas de
+autor, software de gráficos y entornos de programación, también para
+motivar al usuario para empezar a hacer uso del sistema, además que
+puede dar una idea general al usuario o también muy particular de lo que
+involucra el sistema.
+
+Se puede implementar usando texto de aviso de ayuda, por ejemplo cuando
+hay un campo de entrada de email, se le puede emitir un cuadro de
+dialogo al lado en caso de que sea incorrecto; en el menú contextual
+opciones de ayuda para determinadas funciones, esto podría incluir
+iconos interactivos como “?” indicando que puede encontrar ayuda; se
+pueden incluir ejemplos para determinada tarea, esto puede hacerse
+mediante un videos para una determinada tarea; incluir una introducción
+de uso pequeña en el inicio de la aplicación; también instrucciones en
+línea de ayuda, por ejemplo para el campo de una contraseña, indicar al
+lado lo que necesita para una contraseña segura y/o las reglas o formato
+que debe tener por ejemplo, etc. Para usuarios avanzados es recomendable
+tener la opción ocultar o hacer invisible las ayudas.
+
+Ventajas
+~~~~~~~~
+
+-  Ayudar al entendimiento y uso eficiente del software: Al tener
+   distintos tipos de ayuda dentro de la interfaz de un sistema, el
+   usuario podrá acceder a ella y con eso se le facilitará y mejorará el
+   uso del sistema, dando un mejor uso del mismo.
+-  Ayuda a usuarios de poco conocimiento al desarrollo de tareas
+   difíciles: En el proceso de entendimiento a un usuario novatos de un
+   sistema complejo, se le facilita por medio de la ayudas y/o guías, y
+   con ello el uso de funciones complejas del sistema de una mejor y
+   rápida ayuda.
+-  Hace menos vulnerable al sistema de errores, brindando ayudas para
+   evirtarlo: Al tener ayudas de como realizar las acciones en el
+   sistema, se disminuiría los fallos dentro del sistema ya sea por
+   errores en la manipulación de información por usuario de manera
+   errónea.
+-  Al proporcionar al usuario una instrucción de asistencia a un lado de
+   una interacción, es más fácil para el usuario para relacionar la
+   instrucción.
+
+Desventajas
+~~~~~~~~~~~
+
+-  Si la manera de mostrar la ayuda no es bien implementada, tomando
+   consideraciones del usuario, puede resultar irritante para el mismo.
+-  Las funciones díficiles de desarrollar en un sistema con ayudas
+   “pobres” resultaría difícil para el usuario desarrollar las acciones
+   en el mismo.
+-  Para usuarios avanzados puede ser muy molesto los mensajes o avisos
+   de ayuda ya que tienen amplia experiencia en uso y manejo de estos
+   sistemas y si no se incluye una opción de “invisible” u “oculto”
+   puede ser tedioso el lidiar con esos mensajes de ayuda.
+
+Ejemplos
+~~~~~~~~
+
+.. figure:: _figures/firefox.png
+   :alt: 
+
+.. figure:: _figures/programa_consola.png
+   :alt: 
+
+Gestión de Imágenes
+-------------------
+
+En este patrón se utiliza una interfaz para la gestión de vistas, vídeos
+y otros elementos, principalmente mediante miniaturas, vista de
+elementos y una interfaz de navegación.
+
+Características
+~~~~~~~~~~~~~~~
+
+Por lo general las personas trabajan con listas o colecciones cuando se
+trata de manejo o administración de elementos visuales o videos, donde
+el usuario puede editar sobre ellos mismos o tener la vista. Mediante
+este patrón se puede garantizar lo anterior descrito.
+
+Ventajas
+~~~~~~~~
+
+-  Facilidad en la organización de la información
+-  Facilidad en la navegación
+-  Fácil acceso para la modificación, búsqueda o vista de la información
+
+Desventajas
+~~~~~~~~~~~
+
+-  A veces resulta difícil usarlos.
+
+Ejemplos
+~~~~~~~~
+
+.. figure:: _figures/Bridge.png
+   :alt: 
+
+.. figure:: _figures/mockup.png
    :alt: 
 
 Glosario
