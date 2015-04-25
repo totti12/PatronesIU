@@ -39,7 +39,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Patrones de Interfaces de Usuario'
-copyright = u'2015, Armando Arce'
+copyright = u'2015, Editor: Armando Arce'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -174,7 +174,7 @@ latex_paper_size = 'a5'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'PatronesIU.tex', u'Patrones de Interfaces de Usuario',
-   u'Armando Arce', 'manual'),
+   u'Editor: Armando Arce', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -210,7 +210,7 @@ latex_documents = [
     # would mean that specific document would be compressed
     # regardless of the global pdf_compressed setting.
     
-pdf_documents = [ ('index', 'PatronesIU', 'Patrones de Interfaces de Usuario', 'Armando Arce')]
+pdf_documents = [ ('index', 'PatronesIU', 'Patrones de Interfaces de Usuario', 'Editor: Armando Arce')]
 
     # A comma-separated list of custom stylesheets. Example:
 pdf_stylesheets = ['serif','a5','bw']
