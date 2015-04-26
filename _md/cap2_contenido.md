@@ -36,11 +36,11 @@ Actualmente, los usuarios y generalmente, los compradores en línea, están acos
 
 ### Ejemplos
 
-![](_figures/Fig2-1.png)
+![](_figures/FeatureSearchBrowse1.png)
 
 Un sitio que emplea esta técnica es ebay.es, la figura 1 hace referencia a un bosquejo similar a esta página web. Se puede observar los tres elementos esenciales, la barra de búsqueda con su respectivo botón de lupa (buscar), un menú horizontal que muestra diferentes categorías de productos que ofrece la página, esto hace alusión a la navegación, así como también la parte inferior izquierda que le ofrece al usuario otros productos alternativos. Y por último se muestra en el centro y al lado derecho el producto que el usuario eligió, imágenes y características del mismo.
 
-![](_figures/Fig2-2.png)
+![](_figures/FeatureSearchBrowse2.png)
 
 La figura 2 hace referencia el sitio mercadolibre.com, el cual ofrece venta de productos a los usuarios, en él se muestra la barra de búsqueda en la parte superior, en caso de la navegación ofrece una lista de categorías y clasificados, así como posibles productos que el comprador esté interesado. Y el producto en la parte inferior izquierda con diferentes imágenes y características.
 
@@ -58,10 +58,10 @@ Se recomienda que cuando los flujos tienen mucha información se dividan en cate
 
 Cada elemento o noticia debe incluir al menos, la siguiente información:
 
-+ Qué: Título, descripción corta o imagen.
-+ Quien: Autor, persona o fuente.
-+ Cuando: Fecha, hora.
-+ Dónde: lugar, organización, sitio web.
+* Qué: Título, descripción corta o imagen.
+* Quien: Autor, persona o fuente.
+* Cuando: Fecha, hora.
+* Dónde: lugar, organización, sitio web.
 
 Se puede agregar un botón de “mas”, que muestre detalles adicionales del elemento.
 
@@ -81,11 +81,11 @@ Al ser esta técnica de modo informativo, requiere que el usuario este en uso co
 
 ### Ejemplos
 
-![](_figures/Fig2-3.png)
+![](_figures/NewsStream1.png)
 
 Las redes sociales se caracterizan por el uso de este patrón por lo que la figura 3, presenta un bosquejo de un perfil social, donde el usuario puede visualizar diferentes noticias en orden cronológico inverso, de los usuarios o amigos que tenga asociados a su cuenta, por lo que si se desplaza hacia abajo podrá observar noticias mas antiguas.
 
-![](_figures/Fig2-4.png)
+![](_figures/NewsStream2.png)
 
 La figura anterior, número 4, hace referencia a otra red social, que muestra del lado izquierdo información con su respectivo título y fecha de publicación, eso si mantenido el orden cronológico inverso, por lo que el usuario del perfil podrá ver lo último que ha sucedido y al lado derecho se muestra como complemento los contactos, canales y otra información relacionada con la cuenta.
 
@@ -121,11 +121,11 @@ Actualmente, los usuarios y generalmente, los compradores en línea, están acos
 
 ### Ejemplos
 
-![](_figures/Fig2-5.png)
+![](_figures/Dashboard1.png)
 
 El sitio mint.com, versión beta, muestra información financiera, previamente editada y personalizada por el usuario, por lo que le permite ver en diferentes paneles, alertas, bolsas de valores, subida/caída de valores, gráficas que reflejan balances y bolsas de valores, así como mapas personalizables. Toda esta información hace referencia a la figura 5, que como la técnica lo menciona reúne muchas lista de elementos diferentes.
 
-![](_figures/Fig2-6.png)
+![](_figures/Dashboard2.png)
 
 El sitio vox es un portal orientado a que los usuarios compartan y socialicen, sin embargo utiliza la modalidad de tablero de mando porque presenta diferentes listas de información como lo son contactos, flujos de noticias, videos y diferentes opciones de entretenimiento, la figura 6 presenta un bosquejo de este sitio.
 
@@ -156,11 +156,11 @@ Como todo patrón de diseño, presenta desventajas entre aplicaciones, la más s
  
  En esta aplicación, como lo muestra la figura adjunta, se ve la paleta al lado izquierdo de la pantalla con diversas opciones de colorear, recortar…, a la derecha el gran panel en blanco y en la parte inferior una paleta de colores, como se ha estipulado anteriormente.
 
-![](_figures/Paint.png)
+![](_figures/CanvasPlusPalette1.png)
 
  Otro ejemplo de canvas plus palette es Photoshop, que presenta paneles despegables a la derecha, a su izquierda un panel de botones y en el centro el lienzo, todo colocado en la misma ventana.
 
-![](_figures/Photoshop.png)
+![](_figures/CanvasPlusPalette2.png)
 
 ## Asistente
 
@@ -176,11 +176,11 @@ Como Wizard se basa en guiar al usuario, se usan valores predeterminados los cua
 
 Las aplicaciones diseñadas dentro de este patrón, deben poseer botones como cancelar, anterior y siguiente sin olvidar el botón Finalizar para decirle al usuario que ha finalizado la tarea; al igual que en cada una de las pantallas debe existir una etiqueta explicando lo que se pretende, de la misma forma al iniciar la aplicación debe poseer una etiqueta que sirva de “asistente”, para que el usuario entienda lo que va a hacer y como lo va a hacer.
 
-### Ventajas:
+### Ventajas
 
 Al dividir las tareas por partes, hace que el usuario entienda mejor lo que está ejecutando y a su vez terminar el o los procesos de forma satisfactoria. Son fáciles y rápidos de usar, ya que solo muestran dos opciones en su mayoría que son anterior y siguiente y al finalizar muestran un mensaje que indica que la tarea ha finalizado favorablemente.
 
-### Desventajas:
+### Desventajas
 
 Las desventajas encontradas para este patrón y una de las más comunes entre desarrolladores es saber encontrar un equilibrio a la hora de dividir las tareas, ya que resulta tedioso para el usuario ver muchos pasos, siendo así el caso que por largos y aburridos el usuario nunca termine las tareas, además de que limita a los usuarios en las decisiones que se quieran tomar.
 
@@ -188,21 +188,19 @@ No es recomendable usar este tipo diseño cuando la aplicación es usada frecuen
 
 Para no mantener todos los datos en una sola página, se pueden utilizar los siguientes patrones:
 
-* **Secciones de Títulos:** Poner números a los títulos para que todos los pasos sean visibles a la vez.
+* Secciones de Títulos: Poner números a los títulos para que todos los pasos sean visibles a la vez.
+* Habilitación de Respuesta: Todos los pasos están presentes en la ventana, solo que se van activando conforme el usuario vaya avanzando.
+* Divulgación de Respuesta: Se muestra un paso de la interfaz pero hasta que el usuario de por finalizado el paso anterior.
 
-* **Habilitación de Respuesta:** Todos los pasos están presentes en la ventana, solo que se van activando conforme el usuario vaya avanzando.
-
-* **Divulgación de Respuesta:** Se muestra un paso de la interfaz pero hasta que el usuario de por finalizado el paso anterior.
-
-### Ejemplos:
+### Ejemplos
 
 Cuando creamos un Facebook, aparece la ventana adjunta, donde vemos que cada paso informa al usuario lo que hace cada ventana y a la vez enumera en que paso vamos, al igual de la opción de omitir el paso, pues la ventana siguiente no es afectada con las decisiones de la ventana actual.
 
-![](_figures/WizardFace.png)
+![](_figures/Wizard1.png)
 
 Lleva un orden, mediante el cual cada ventana depende de la información de la ventana anterior, señalando de igual manera el número de paso, junto con un título que resume correctamente la tarea de la ventana.
 
-![](_figures/WizardUPS.png)
+![](_figures/Wizard2.png)
 
 ## Editor de Configuración
 
@@ -228,42 +226,40 @@ Por otro parte se encuentra la dificultad por parte del diseñador de como mostr
 
 Panel de Control de Windows 8: Windows nos presenta en su ventana de configuración la forma en que queremos presentar la información, en este caso por categorías, mostrando cada una de ellas enlaces a las opciones, las cuales presentan nombres entendibles por cualquier usuario (experto o aprendiz).
 
-![](_figures/PanelDeControl.png)
+![](_figures/SettingEditor1.png)
 
 Configuraciones de Cuentas de Facebook: Facebook presenta en el panel izquierdo las categorías y al dar clic aparecen las opciones correspondientes en el panel de la derecha, con botones para poder editar esa información sin que se guarde automáticamente.
 
-![](_figures/SettingFace.png)
+![](_figures/SettingEditor2.png)
 
-## Patrón Vistas Alternativas
+## Vistas Alternativas
 
 Las aplicaciones más avanzadas de este patrón se orientarían hacia diferentes puntos de vista sobre los mismos datos, tales como diferentes visualizaciones y / o mecanismos de navegación para ayudar a los usuarios a analizar y descubrir lo que necesitan. Por lo que la funcionalidad principal de dicho patrón en este apartado como se verá va enfocado hacia la creación de vistas alternativas con su respectiva funcionalidad distribuida en las mismas y no en la interfaz que se muestra por defecto (principal).
 
 ### Características
 
-1. Permite trabajar con varios conjuntos de información con características distintas:
+Permite trabajar con varios conjuntos de información con características distintas:
  	
-A travez del modelo del diseño, se puede incorporar dichas características en distintas vistas y permitir al usuario elegir una entre tantas de esas vistas, con eso se logra obtener y trabajar sobre los conjuntos de características de manera separada, pero la elección de las mismas es libre para el usuario, dando mayor fluides y libertad en el espacio de trabajo para el usuario y comodidad en la escogencia entre las múltiples vistas y acciones a ejecutar en las mismas. Con dichos ajustes se abordan las necesidades de cada quien. Importante saber que cuando una interfaz contendrá múltiples funciones y dichas funciones sobrecargarán a la interfaz principal lo mejor será crear varios conjuntos de características distintas mediante múltiples vistas.
+A travez del modelo del diseño, se puede incorporar dichas características en distintas vistas y permitir al usuario elegir una entre tantas de esas vistas, con eso se logra obtener y trabajar sobre los conjuntos de características de manera separada, pero la elección de las mismas es libre para el usuario, dando mayor fluidez y libertad en el espacio de trabajo para el usuario y comodidad en la escogencia entre las múltiples vistas y acciones a ejecutar en las mismas. Con dichos ajustes se abordan las necesidades de cada quien. Importante saber que cuando una interfaz contendrá múltiples funciones y dichas funciones sobrecargarán a la interfaz principal lo mejor será crear varios conjuntos de características distintas mediante múltiples vistas.
 
-2. Permite la distribución de funcionalidades: 	
-   
- Las cargas de trabajo que se podrían dar en una interfaz mal diseñada que no aplica este patrón, podrán ser muchas, y por lo tanto la usabilidad y manejo de esta interfaz sería muy poco eficiente, lo ideal es liberar la carga, separando necesidades en distintas vistas, con ello se evitaría la sobrecarga de datos y funcionalidades de la interfaz principal.
+Permite la distribución de funcionalidades: Las cargas de trabajo que se podrían dar en una interfaz mal diseñada que no aplica este patrón, podrán ser muchas, y por lo tanto la usabilidad y manejo de esta interfaz sería muy poco eficiente, lo ideal es liberar la carga, separando necesidades en distintas vistas, con ello se evitaría la sobrecarga de datos y funcionalidades de la interfaz principal.
 
 ### Ventajas
  
-1. Mayor usabilidad: Los sistemas que incluyan este patrón como se mencionó anteriormente darán mayor usabilidad al sistema, evitando sobrecarga de datos en sólo una interfaz, además brindar por medio de distintas vistas las mismas funcionalidades pero de manera más organizada y bien distribuidas.
-2. Mayor eficiencia del sistema: Se obtiene mayor velocidad, agilidad, estilos visuales que gustarán al usuario.
-3. Ayudan al manteniendo de sistemas: Al dividirse las cargas y funciones a desarrollar en dado sistema, será de mayor facilidad al mantenimiento del mismo, ya que la información se encuentra bien distribuida y separada por distintas vistas.
-4. Permite trabajar con grupos de información a elección del usuario: El usuario tendrán la posibilidad a travez de las múltiples vistas, la elección del grupo de información con el cual trabajar, de modo que si elige uno que en realidad no iba a ser de su agrado fácilmente puede navegar por medio de las vistas alternativas y elegir el que crea necesario y trabajar en el mismo en un módulo o interfaz distinta(alternativa).
+* Mayor usabilidad: Los sistemas que incluyan este patrón como se mencionó anteriormente darán mayor usabilidad al sistema, evitando sobrecarga de datos en sólo una interfaz, además brindar por medio de distintas vistas las mismas funcionalidades pero de manera más organizada y bien distribuidas.
+* Mayor eficiencia del sistema: Se obtiene mayor velocidad, agilidad, estilos visuales que gustarán al usuario.
+* Ayudan al manteniendo de sistemas: Al dividirse las cargas y funciones a desarrollar en dado sistema, será de mayor facilidad al mantenimiento del mismo, ya que la información se encuentra bien distribuida y separada por distintas vistas.
+* Permite trabajar con grupos de información a elección del usuario: El usuario tendrán la posibilidad a travez de las múltiples vistas, la elección del grupo de información con el cual trabajar, de modo que si elige uno que en realidad no iba a ser de su agrado fácilmente puede navegar por medio de las vistas alternativas y elegir el que crea necesario y trabajar en el mismo en un módulo o interfaz distinta(alternativa).
 
 ### Desventajas
 
-1. No detectar las funcionalidades correctamente:  No saber detectar cuales son realmente las funcionalidades que necesitan separación respecto a la interfaz principal, puede generar un gran gasto de tiempo en la misma, y sería inútil ya que el usuario no dará uso de dichas vistas.
+* No detectar las funcionalidades correctamente:  No saber detectar cuales son realmente las funcionalidades que necesitan separación respecto a la interfaz principal, puede generar un gran gasto de tiempo en la misma, y sería inútil ya que el usuario no dará uso de dichas vistas.
 
 ### Ejemplos
 
-![](_figures/dropbox.png)
+![](_figures/AlternativeViews1.png)
 
-![](_figures/maps.png)
+![](_figures/AlternativeViews2.png)
  
 ## Múltiples áreas de trabajo
 
@@ -277,9 +273,9 @@ Algunas de las recomendaciones para elaborar una correcta interfaz con múltiple
 
 Existen muchas maneras de implementar esto en una interfaz entre ellas:
 
-1. Tabuladores: Funcionan como pestañas una al lado de otra, cada “pestaña” contiene una tarea específica por lo que la navegación entre ellas es realmente fluida.
-2. Columnas o paneles dentro de una misma ventana.
-3. Ventanas divididas  con divisores interactivos.
+* Tabuladores: Funcionan como pestañas una al lado de otra, cada “pestaña” contiene una tarea específica por lo que la navegación entre ellas es realmente fluida.
+* Columnas o paneles dentro de una misma ventana.
+* Ventanas divididas  con divisores interactivos.
 
 ### Ventajas
 
@@ -289,15 +285,15 @@ Existen muchas maneras de implementar esto en una interfaz entre ellas:
 * Fácil ubicación: Cuando un usuario trabaja en una “pestaña”, como tiene visible las demás dará una mejor ubicación en donde se encuentra trabajando y hacia donde puede ir, según lo desee.
 * Navegación: Permitir al usuario navegar por las “pestañas” en un orden lógico con la tecla Tab. Una pestaña centrada se podrá seleccionar con la tecla Enter.
 
-### Desventajas:
+### Desventajas
 
 * Al permitir crear múltiples áreas, si el usuario no mantiene orden en las mismas puede generar confusión y/o fácilmente se puede perder la línea de trabajo.
 
 ### Ejemplos
 
-![](_figures/inicio.png)
+![](_figures/ManyWorkspaces1.png)
 
-![](_figures/compannia.png)
+![](_figures/ManyWorkspaces2.png)
 
 ## Múltiples niveles de ayuda
 
@@ -315,14 +311,14 @@ Se puede implementar usando texto de aviso de ayuda, por ejemplo cuando hay un c
 ### Desventajas
 
 * Si la manera de mostrar la ayuda no es bien implementada, tomando consideraciones del usuario, puede resultar irritante para el mismo.
-* Las funciones díficiles de desarrollar en un sistema con ayudas “pobres” resultaría difícil para el usuario desarrollar las acciones en el mismo.
+* Las funciones difíciles de desarrollar en un sistema con ayudas “pobres” resultaría difícil para el usuario desarrollar las acciones en el mismo.
 * Para usuarios avanzados puede ser muy molesto los mensajes o avisos de ayuda ya que tienen amplia experiencia en uso y manejo de estos sistemas y si no se incluye una opción de “invisible” u “oculto” puede ser tedioso el lidiar con esos mensajes de ayuda.
 
 ### Ejemplos
  
-![](_figures/firefox.png)
+![](_figures/MultiLevelHelp1.png)
 
-![](_figures/programa_consola.png)
+![](_figures/MultiLevelHelp2.png)
  
 ## Gestión de Imágenes
 
@@ -344,9 +340,9 @@ Por lo general las personas trabajan con listas o colecciones cuando se trata de
 
 ### Ejemplos
 
-![](_figures/Bridge.png)
+![](_figures/PictureManager1.jpg)
 
-![](_figures/mockup.png)
+![](_figures/PictureManager2.png)
 
 ## Glosario
 
@@ -362,7 +358,6 @@ Por lo general las personas trabajan con listas o colecciones cuando se trata de
 
 * Paneles Plegables: Despliega sus opciones en algún sentido, al dar clic sobre el nombre categórico.
 
-* Patrón: Dicta lo que hay que hacer en una situación determinada para un fin común.
 
 ## Referencias
 
