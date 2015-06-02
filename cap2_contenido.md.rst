@@ -618,7 +618,7 @@ realizando una tarea A de repente se da cuenta que necesita hacer una
 tarea B, y así sucesivamente, por lo que este patrón le permite ejecutar
 estas acciones mediante las múltiples áreas de trabajo; entonces una
 buena interfaz que permita la ejecución de tareas múltiples es realmente
-últil para este tipo de personas.
+útil para este tipo de personas.
 
 Características
 ~~~~~~~~~~~~~~~

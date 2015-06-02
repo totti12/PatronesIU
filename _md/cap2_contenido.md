@@ -263,7 +263,7 @@ Permite la distribución de funcionalidades: Las cargas de trabajo que se podrí
  
 ## Múltiples áreas de trabajo
 
-Permite y da la comodidad al usuario de crear su propio ambiente de trabajo, dando la opción de colocar sus espacios de trabajo uno al lado del otro simultáneamente. Pensado y creado para personas que trabajan o realizan múltiples tareas al mismo tiempo(a estas personas se les conoce como “multitask”) un ejemplo de este tipo de usuario, es el que está realizando una tarea A de repente se da cuenta que necesita hacer una tarea B, y así sucesivamente, por lo que este patrón le permite ejecutar estas acciones mediante las múltiples áreas de trabajo; entonces una buena interfaz que permita la ejecución de tareas múltiples es realmente últil para este tipo de personas. 
+Permite y da la comodidad al usuario de crear su propio ambiente de trabajo, dando la opción de colocar sus espacios de trabajo uno al lado del otro simultáneamente. Pensado y creado para personas que trabajan o realizan múltiples tareas al mismo tiempo(a estas personas se les conoce como “multitask”) un ejemplo de este tipo de usuario, es el que está realizando una tarea A de repente se da cuenta que necesita hacer una tarea B, y así sucesivamente, por lo que este patrón le permite ejecutar estas acciones mediante las múltiples áreas de trabajo; entonces una buena interfaz que permita la ejecución de tareas múltiples es realmente útil para este tipo de personas. 
 
 ### Características
 
